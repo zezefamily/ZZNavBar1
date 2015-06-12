@@ -14,6 +14,9 @@
 		E44F6F161B2821850068825B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44F6F151B2821850068825B /* Images.xcassets */; };
 		E44F6F191B2821850068825B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44F6F171B2821850068825B /* LaunchScreen.xib */; };
 		E44F6F251B2821850068825B /* ZZNavBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F6F241B2821850068825B /* ZZNavBarTests.m */; };
+		E44F6F301B2821BA0068825B /* ZZNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F6F2F1B2821BA0068825B /* ZZNavBar.m */; };
+		E44F6F331B282EB50068825B /* DataView.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F6F321B282EB50068825B /* DataView.m */; };
+		E44F6F361B2832060068825B /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = E44F6F351B2832060068825B /* Category.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		E44F6F1E1B2821850068825B /* ZZNavBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZNavBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44F6F231B2821850068825B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44F6F241B2821850068825B /* ZZNavBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZNavBarTests.m; sourceTree = "<group>"; };
+		E44F6F2E1B2821BA0068825B /* ZZNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNavBar.h; sourceTree = "<group>"; };
+		E44F6F2F1B2821BA0068825B /* ZZNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavBar.m; sourceTree = "<group>"; };
+		E44F6F311B282EB50068825B /* DataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataView.h; sourceTree = "<group>"; };
+		E44F6F321B282EB50068825B /* DataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataView.m; sourceTree = "<group>"; };
+		E44F6F351B2832060068825B /* Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Category.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,9 @@
 		E44F6F071B2821850068825B /* ZZNavBar */ = {
 			isa = PBXGroup;
 			children = (
+				E44F6F2E1B2821BA0068825B /* ZZNavBar.h */,
+				E44F6F2F1B2821BA0068825B /* ZZNavBar.m */,
+				E44F6F341B282EC20068825B /* DataView */,
 				E44F6F0C1B2821850068825B /* AppDelegate.h */,
 				E44F6F0D1B2821850068825B /* AppDelegate.m */,
 				E44F6F0F1B2821850068825B /* ViewController.h */,
@@ -98,6 +109,7 @@
 			children = (
 				E44F6F091B2821850068825B /* Info.plist */,
 				E44F6F0A1B2821850068825B /* main.m */,
+				E44F6F351B2832060068825B /* Category.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +129,15 @@
 				E44F6F231B2821850068825B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E44F6F341B282EC20068825B /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				E44F6F311B282EB50068825B /* DataView.h */,
+				E44F6F321B282EB50068825B /* DataView.m */,
+			);
+			name = DataView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +222,7 @@
 			files = (
 				E44F6F141B2821850068825B /* Main.storyboard in Resources */,
 				E44F6F191B2821850068825B /* LaunchScreen.xib in Resources */,
+				E44F6F361B2832060068825B /* Category.plist in Resources */,
 				E44F6F161B2821850068825B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44F6F111B2821850068825B /* ViewController.m in Sources */,
+				E44F6F331B282EB50068825B /* DataView.m in Sources */,
 				E44F6F0E1B2821850068825B /* AppDelegate.m in Sources */,
 				E44F6F0B1B2821850068825B /* main.m in Sources */,
+				E44F6F301B2821BA0068825B /* ZZNavBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

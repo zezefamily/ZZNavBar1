@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ZZNavBar.h"
 
 @interface ViewController ()
-
+@property (nonatomic,strong) ZZNavBar *zznavBar;
 @end
 
 @implementation ViewController
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.zznavBar = [[ZZNavBar alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 30)];
+    [self.view addSubview:self.zznavBar];
+    
+    
+    self.zznavBar.blockText = ^(NSString *text){
+    
+        NSLog(@"text == %@",text);
+        
+    };
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
